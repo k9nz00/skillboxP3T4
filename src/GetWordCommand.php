@@ -21,7 +21,7 @@ class GetWordCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln($input->getArgument('Param'));
+        $output->writeln('Привет ' . $input->getArgument('Param'));
         return 1;
     }
 }
